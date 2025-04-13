@@ -1,0 +1,2 @@
+1. Leverage the powerful representation capability of LLM to extract discriminative algorithm features.
+2. The comprehensive algorithm representation bestows AS-LLM with at least three advantages: (i) A more nuanced modeling of the bidirectional nature of algorithm selection tasks; (ii) The generalization capability to novel algorithms not encountered during training; (iii) Robust performance superiority in different scenarios.

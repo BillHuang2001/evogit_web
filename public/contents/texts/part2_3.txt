@@ -1,0 +1,3 @@
+1. LLM-Assisted Evolution Framework: Introducing a framework that autonomously creates innovative `Reproduction' methods to tackle unseen multi-objective optimization problems (MOPs).
+2. Robust Testing and Refinement: Establishing a testing module that autonomously refines the generated methods through interactions with large language models (LLMs).
+3. Dynamic Selection Strategy: Implementing a dynamic selection strategy with informative crossover and mutation to ensure high-quality `Reproduction' methods, validated through extensive empirical studies.

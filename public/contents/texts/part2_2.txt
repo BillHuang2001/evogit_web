@@ -1,0 +1,2 @@
+1. Multimodal Optimization Approach: Introducing a method that uses both textual and visual prompts to solve the Capacitated Vehicle Routing Problem (CVRP), enhancing understanding and performance.
+2. Human-like Problem-Solving Framework: Designing a framework that mimics human workflows, improving generalization across various optimization challenges.
