@@ -1,2 +1,0 @@
-1. A specialized prompt-learning mechanism fine-tunes the LLM by integrating constraint violations and objective values, enabling it to generate solutions that balance performance and constraint adherence.
-2. The refined LLM is integrated as a search operator within a classical CMOEA framework, working alongside traditional evolutionary operators to accelerate population convergence.

@@ -1,2 +1,0 @@
-1. By introducing reinforcement learning to guide the search, this work presents the first reusable model merging method that explores the optimal model configurations in both the parameter and architecture spaces.
-2. The work adopts a multi-objective learning paradigm that allows users to prioritize the importance of multiple tasks based on task needs by searching for the Pareto front of merging strategy, enabling them to select the most suitable merged model.
