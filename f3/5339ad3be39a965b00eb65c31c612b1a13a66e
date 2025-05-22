@@ -1,0 +1,8 @@
+error: Parsing error: Unexpected token (30:0) at src/components/NavigationBar.js:
+  28 |           </a>
+  29 |           <a href="https://discord.gg/Vbtgcpy7G4"
+> 30 |
+
+1 error found.
+
+info  - Need to disable some ESLint rules? Learn more here: https://nextjs.org/docs/app/api-reference/config/eslint#disabling-rules
