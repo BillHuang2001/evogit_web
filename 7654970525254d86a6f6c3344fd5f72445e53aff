@@ -1,0 +1,21 @@
+warning: Using `<img>` could result in slower LCP and higher bandwidth. Consider using `<Image />` from `next/image` or a custom image loader to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element (@next/next/no-img-element) at src/app/layout.js:15:15:
+  13 |           <div className="container mx-auto flex justify-between items-center p-5">
+  14 |             <div className="flex items-center">
+> 15 |               <img
+     |               ^
+  16 |                 src="/contents/images/evox_logo_with_text_dark.png"
+  17 |                 alt="EvoX Logo"
+  18 |                 className="h-8"
+
+error: Do not use an `<a>` element to navigate to `/`. Use `<Link />` from `next/link` instead. See: https://nextjs.org/docs/messages/no-html-link-for-pages (@next/next/no-html-link-for-pages) at src/app/layout.js:22:15:
+  20 |             </div>
+  21 |             <nav className="space-x-6 hidden md:block">
+> 22 |               <a href="/" className="text-gray-900 hover:text-blue-500">
+     |               ^
+  23 |                 Home
+  24 |               </a>
+  25 |               <a
+
+1 error and 1 warning found.
+
+info  - Need to disable some ESLint rules? Learn more here: https://nextjs.org/docs/app/api-reference/config/eslint#disabling-rules
