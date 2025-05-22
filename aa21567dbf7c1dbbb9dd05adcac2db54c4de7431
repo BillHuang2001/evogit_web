@@ -1,0 +1,21 @@
+warning: Using `<img>` could result in slower LCP and higher bandwidth. Consider using `<Image />` from `next/image` or a custom image loader to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element (@next/next/no-img-element) at src/app/layout.js:15:15:
+  13 |           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center h-16">
+  14 |             <div className="flex items-center">
+> 15 |               <img className="h-8 w-auto" src="/contents/images/evox_logo_with_text_light.png" alt="EvoX Logo" />
+     |               ^
+  16 |               <nav className="ml-10 space-x-4">
+  17 |                 <a href="/" className="text-gray-700 hover:text-gray-900">Home</a>
+  18 |                 <a href="https://evox.readthedocs.io/en/latest/" className="text-gray-700 hover:text-gray-900">Docs</a>
+
+error: Do not use an `<a>` element to navigate to `/`. Use `<Link />` from `next/link` instead. See: https://nextjs.org/docs/messages/no-html-link-for-pages (@next/next/no-html-link-for-pages) at src/app/layout.js:17:17:
+  15 |               <img className="h-8 w-auto" src="/contents/images/evox_logo_with_text_light.png" alt="EvoX Logo" />
+  16 |               <nav className="ml-10 space-x-4">
+> 17 |                 <a href="/" className="text-gray-700 hover:text-gray-900">Home</a>
+     |                 ^
+  18 |                 <a href="https://evox.readthedocs.io/en/latest/" className="text-gray-700 hover:text-gray-900">Docs</a>
+  19 |                 <a href="https://github.com/EMI-Group/evox" className="text-gray-700 hover:text-gray-900">GitHub</a>
+  20 |                 <a href="#install" className="text-gray-700 hover:text-gray-900">Install</a>
+
+1 error and 1 warning found.
+
+info  - Need to disable some ESLint rules? Learn more here: https://nextjs.org/docs/app/api-reference/config/eslint#disabling-rules
