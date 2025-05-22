@@ -1,0 +1,46 @@
+warning: Using `<img>` could result in slower LCP and higher bandwidth. Consider using `<Image />` from `next/image` or a custom image loader to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element (@next/next/no-img-element) at src/app/layout.js:15:15:
+  13 |           <div className="max-w-7xl mx-auto px-4 py-4 flex items-center justify-between">
+  14 |             <div className="flex items-center space-x-4">
+> 15 |               <img
+     |               ^
+  16 |                 src="/contents/images/evox_logo_with_text_light.png"
+  17 |                 alt="EvoX Logo"
+  18 |                 className="h-8 dark:hidden"
+
+warning: Using `<img>` could result in slower LCP and higher bandwidth. Consider using `<Image />` from `next/image` or a custom image loader to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element (@next/next/no-img-element) at src/app/layout.js:20:15:
+  18 |                 className="h-8 dark:hidden"
+  19 |               />
+> 20 |               <img
+     |               ^
+  21 |                 src="/contents/images/evox_logo_with_text_dark.png"
+  22 |                 alt="EvoX Logo Dark"
+  23 |                 className="h-8 hidden dark:block"
+
+2 warnings found.
+
+info  - Need to disable some ESLint rules? Learn more here: https://nextjs.org/docs/app/api-reference/config/eslint#disabling-rules
+ ⚠ Linting is disabled.
+ ⚠ Mangling is disabled. Note: This may affect performance and should only be used for debugging purposes.
+   ▲ Next.js 15.2.4
+
+   Creating an optimized production build ...
+ ✓ Compiled successfully
+   Checking validity of types ...
+   Collecting page data ...
+   Generating static pages (0/5) ...
+   Generating static pages (1/5)
+   Generating static pages (2/5)
+   Generating static pages (3/5)
+ ✓ Generating static pages (5/5)
+   Finalizing page optimization ...
+   Collecting build traces ...
+
+Route (app)                                 Size  First Load JS
+┌ ○ /                                    6.52 kB         145 kB
+└ ○ /_not-found                          1.08 kB         139 kB
++ First Load JS shared by all             138 kB
+  ├ chunks/4bd1b696-5b6c0ccbd3c0c9ab.js  75.1 kB
+  ├ chunks/684-c131fa2291503b5d.js       60.5 kB
+  └ other shared chunks (total)           2.4 kB
+
+○  (Static)  prerendered as static content
