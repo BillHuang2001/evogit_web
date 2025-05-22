@@ -1,0 +1,14 @@
+✔ No ESLint warnings or errors
+ ⚠ Linting is disabled.
+ ⚠ Mangling is disabled. Note: This may affect performance and should only be used for debugging purposes.
+   ▲ Next.js 15.2.4
+
+   Creating an optimized production build ...
+Failed to compile.
+
+./src/app/layout.js
+Module not found: Can't resolve '@next/font/google'
+
+https://nextjs.org/docs/messages/module-not-found
+
+> Build failed because of webpack errors
