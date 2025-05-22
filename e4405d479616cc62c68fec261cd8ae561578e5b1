@@ -1,0 +1,12 @@
+error: Parsing error: Unexpected token (26:2) at src/app/page.js:26:2:
+  24 |
+  25 | export default function Home() {
+> 26 |   return (
+     |  ^
+  27 |     <div className="min-h-screen bg-gray-100">
+  28 |       {/* Navigation Bar */}
+  29 |       <header className="sticky top-0 bg-white shadow z-50">
+
+1 error found.
+
+info  - Need to disable some ESLint rules? Learn more here: https://nextjs.org/docs/app/api-reference/config/eslint#disabling-rules
