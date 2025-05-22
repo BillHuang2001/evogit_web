@@ -1,0 +1,24 @@
+✔ No ESLint warnings or errors
+ ⚠ Linting is disabled.
+ ⚠ Mangling is disabled. Note: This may affect performance and should only be used for debugging purposes.
+   ▲ Next.js 15.2.4
+
+   Creating an optimized production build ...
+ ✓ Compiled successfully
+   Checking validity of types ...
+   Collecting page data ...
+   Generating static pages (0/5) ...
+Error occurred prerendering page "/_not-found". Read more: https://nextjs.org/docs/messages/prerender-error
+TypeError: react_default.useState is not a function or its return value is not iterable
+    at components_NavigationBar (/tmp/phylox/evogit_web_gpt-4o_0/.phylox_evaluate/f2f791456251dfb6920904bd5b8e407d444c1abc_0ttgeu68/.next/server/app/_not-found/page.js:1:3403)
+    at ek (/tmp/phylox/evogit_web_gpt-4o_0/.phylox_evaluate/f2f791456251dfb6920904bd5b8e407d444c1abc_0ttgeu68/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:17:13337)
+    at e (/tmp/phylox/evogit_web_gpt-4o_0/.phylox_evaluate/f2f791456251dfb6920904bd5b8e407d444c1abc_0ttgeu68/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:17:17246)
+    at e$ (/tmp/phylox/evogit_web_gpt-4o_0/.phylox_evaluate/f2f791456251dfb6920904bd5b8e407d444c1abc_0ttgeu68/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:17:17708)
+    at Array.toJSON (/tmp/phylox/evogit_web_gpt-4o_0/.phylox_evaluate/f2f791456251dfb6920904bd5b8e407d444c1abc_0ttgeu68/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:17:14854)
+    at stringify (<anonymous>)
+    at eF (/tmp/phylox/evogit_web_gpt-4o_0/.phylox_evaluate/f2f791456251dfb6920904bd5b8e407d444c1abc_0ttgeu68/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:17:26079)
+    at eq (/tmp/phylox/evogit_web_gpt-4o_0/.phylox_evaluate/f2f791456251dfb6920904bd5b8e407d444c1abc_0ttgeu68/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:17:26391)
+    at ez (/tmp/phylox/evogit_web_gpt-4o_0/.phylox_evaluate/f2f791456251dfb6920904bd5b8e407d444c1abc_0ttgeu68/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:17:26887)
+    at AsyncLocalStorage.run (node:internal/async_local_storage/async_hooks:91:14)
+Export encountered an error on /_not-found/page: /_not-found, exiting the build.
+ ⨯ Next.js build worker exited with code: 1 and signal: null
