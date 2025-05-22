@@ -4,21 +4,25 @@
    ▲ Next.js 15.2.4
 
    Creating an optimized production build ...
+
+Retrying 1/3...
+
+Retrying 1/3...
  ✓ Compiled successfully
    Checking validity of types ...
    Collecting page data ...
    Generating static pages (0/5) ...
-Error occurred prerendering page "/". Read more: https://nextjs.org/docs/messages/prerender-error
+Error occurred prerendering page "/_not-found". Read more: https://nextjs.org/docs/messages/prerender-error
 ReferenceError: interFont is not defined
-    at RootLayout (/tmp/phylox/evogit_web_gpt-4o_0/.phylox_evaluate/0299ec6f44a54871b9c916ae9ac8cf7254f3a1ce_oin4mxfw/.next/server/app/page.js:1:18297)
-    at ek (/tmp/phylox/evogit_web_gpt-4o_0/.phylox_evaluate/0299ec6f44a54871b9c916ae9ac8cf7254f3a1ce_oin4mxfw/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:17:13337)
-    at e (/tmp/phylox/evogit_web_gpt-4o_0/.phylox_evaluate/0299ec6f44a54871b9c916ae9ac8cf7254f3a1ce_oin4mxfw/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:17:17246)
-    at e$ (/tmp/phylox/evogit_web_gpt-4o_0/.phylox_evaluate/0299ec6f44a54871b9c916ae9ac8cf7254f3a1ce_oin4mxfw/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:17:17708)
-    at Array.toJSON (/tmp/phylox/evogit_web_gpt-4o_0/.phylox_evaluate/0299ec6f44a54871b9c916ae9ac8cf7254f3a1ce_oin4mxfw/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:17:14854)
+    at RootLayout (/tmp/phylox/evogit_web_gpt-4o_0/.phylox_evaluate/0299ec6f44a54871b9c916ae9ac8cf7254f3a1ce_19m_t2n6/.next/server/app/_not-found/page.js:1:6676)
+    at ek (/tmp/phylox/evogit_web_gpt-4o_0/.phylox_evaluate/0299ec6f44a54871b9c916ae9ac8cf7254f3a1ce_19m_t2n6/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:17:13337)
+    at e (/tmp/phylox/evogit_web_gpt-4o_0/.phylox_evaluate/0299ec6f44a54871b9c916ae9ac8cf7254f3a1ce_19m_t2n6/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:17:17246)
+    at e$ (/tmp/phylox/evogit_web_gpt-4o_0/.phylox_evaluate/0299ec6f44a54871b9c916ae9ac8cf7254f3a1ce_19m_t2n6/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:17:17708)
+    at Array.toJSON (/tmp/phylox/evogit_web_gpt-4o_0/.phylox_evaluate/0299ec6f44a54871b9c916ae9ac8cf7254f3a1ce_19m_t2n6/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:17:14854)
     at stringify (<anonymous>)
-    at eF (/tmp/phylox/evogit_web_gpt-4o_0/.phylox_evaluate/0299ec6f44a54871b9c916ae9ac8cf7254f3a1ce_oin4mxfw/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:17:26079)
-    at eq (/tmp/phylox/evogit_web_gpt-4o_0/.phylox_evaluate/0299ec6f44a54871b9c916ae9ac8cf7254f3a1ce_oin4mxfw/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:17:26391)
-    at ez (/tmp/phylox/evogit_web_gpt-4o_0/.phylox_evaluate/0299ec6f44a54871b9c916ae9ac8cf7254f3a1ce_oin4mxfw/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:17:26887)
+    at eF (/tmp/phylox/evogit_web_gpt-4o_0/.phylox_evaluate/0299ec6f44a54871b9c916ae9ac8cf7254f3a1ce_19m_t2n6/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:17:26079)
+    at eq (/tmp/phylox/evogit_web_gpt-4o_0/.phylox_evaluate/0299ec6f44a54871b9c916ae9ac8cf7254f3a1ce_19m_t2n6/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:17:26391)
+    at ez (/tmp/phylox/evogit_web_gpt-4o_0/.phylox_evaluate/0299ec6f44a54871b9c916ae9ac8cf7254f3a1ce_19m_t2n6/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:17:26887)
     at AsyncLocalStorage.run (node:internal/async_local_storage/async_hooks:91:14)
-Export encountered an error on /page: /, exiting the build.
+Export encountered an error on /_not-found/page: /_not-found, exiting the build.
  ⨯ Next.js build worker exited with code: 1 and signal: null
