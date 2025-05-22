@@ -1,0 +1,12 @@
+error: Parsing error: Unexpected token (30:2) at src/app/page.js:30:2:
+  28 |
+  29 | export default function Home() {
+> 30 |   return (
+     |  ^
+  31 |     <main className="flex flex-col items-center justify-center min-h-screen bg-gray-50">
+  32 |       {/* Navigation Bar */}
+  33 |       <nav className="fixed top-0 w-full bg-white shadow-md">
+
+1 error found.
+
+info  - Need to disable some ESLint rules? Learn more here: https://nextjs.org/docs/app/api-reference/config/eslint#disabling-rules
