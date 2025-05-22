@@ -4,10 +4,6 @@
    ▲ Next.js 15.2.4
 
    Creating an optimized production build ...
-
-Retrying 1/3...
-
-Retrying 1/3...
  ✓ Compiled successfully
    Checking validity of types ...
    Collecting page data ...
@@ -25,6 +21,6 @@ Route (app)                                 Size  First Load JS
 + First Load JS shared by all             138 kB
   ├ chunks/4bd1b696-5b6c0ccbd3c0c9ab.js  75.1 kB
   ├ chunks/684-c131fa2291503b5d.js       60.5 kB
-  └ other shared chunks (total)           2.4 kB
+  └ other shared chunks (total)          2.41 kB
 
 ○  (Static)  prerendered as static content
