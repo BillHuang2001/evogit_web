@@ -1,0 +1,12 @@
+error: Do not use an `<a>` element to navigate to `/`. Use `<Link />` from `next/link` instead. See: https://nextjs.org/docs/messages/no-html-link-for-pages (@next/next/no-html-link-for-pages) at src/app/page.js:17:11:
+  15 |         </div>
+  16 |         <div className="space-x-5 text-gray-700 font-medium">
+> 17 |           <a href="/" className="hover:text-blue-500">Home</a>
+     |           ^
+  18 |           <a href="https://evox.readthedocs.io/en/latest/" className="hover:text-blue-500">Docs</a>
+  19 |           <a href="https://github.com/EMI-Group/evox" className="hover:text-blue-500">GitHub</a>
+  20 |           <a href="/install" className="hover:text-blue-500">Install</a>
+
+1 error found.
+
+info  - Need to disable some ESLint rules? Learn more here: https://nextjs.org/docs/app/api-reference/config/eslint#disabling-rules
