@@ -1,0 +1,12 @@
+error: Parsing error: Unexpected token (19:2) at src/app/page.js:19:2:
+  17 |
+  18 | export default function Home() {
+> 19 |   return (
+     |  ^
+  20 |     <div>
+  21 |       {/* Navigation Bar */}
+  22 |       <nav className="sticky top-0 bg-white border-b border-gray-200 shadow-sm">
+
+1 error found.
+
+info  - Need to disable some ESLint rules? Learn more here: https://nextjs.org/docs/app/api-reference/config/eslint#disabling-rules
