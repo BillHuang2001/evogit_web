@@ -1,0 +1,24 @@
+✔ No ESLint warnings or errors
+ ⚠ Linting is disabled.
+ ⚠ Mangling is disabled. Note: This may affect performance and should only be used for debugging purposes.
+   ▲ Next.js 15.2.4
+
+   Creating an optimized production build ...
+ ✓ Compiled successfully
+   Checking validity of types ...
+   Collecting page data ...
+   Generating static pages (0/5) ...
+Error occurred prerendering page "/". Read more: https://nextjs.org/docs/messages/prerender-error
+Error: You're trying to import `@heroicons/react/outline/ArrowRightIcon` from Heroicons v1 but have installed Heroicons v2. Install `@heroicons/react@v1` to resolve this error.
+    at Object.get (/tmp/phylox/evogit_web_gpt-4o_0/.phylox_evaluate/fe838351479892b51301314fda26e2bc38ec9d7f_srcj6yrk/.next/server/app/page.js:4:37186)
+    at Home (/tmp/phylox/evogit_web_gpt-4o_0/.phylox_evaluate/fe838351479892b51301314fda26e2bc38ec9d7f_srcj6yrk/.next/server/app/page.js:1:48893)
+    at ek (/tmp/phylox/evogit_web_gpt-4o_0/.phylox_evaluate/fe838351479892b51301314fda26e2bc38ec9d7f_srcj6yrk/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:17:13337)
+    at e (/tmp/phylox/evogit_web_gpt-4o_0/.phylox_evaluate/fe838351479892b51301314fda26e2bc38ec9d7f_srcj6yrk/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:17:17246)
+    at e$ (/tmp/phylox/evogit_web_gpt-4o_0/.phylox_evaluate/fe838351479892b51301314fda26e2bc38ec9d7f_srcj6yrk/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:17:17708)
+    at Array.toJSON (/tmp/phylox/evogit_web_gpt-4o_0/.phylox_evaluate/fe838351479892b51301314fda26e2bc38ec9d7f_srcj6yrk/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:17:14854)
+    at stringify (<anonymous>)
+    at eF (/tmp/phylox/evogit_web_gpt-4o_0/.phylox_evaluate/fe838351479892b51301314fda26e2bc38ec9d7f_srcj6yrk/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:17:26079)
+    at eq (/tmp/phylox/evogit_web_gpt-4o_0/.phylox_evaluate/fe838351479892b51301314fda26e2bc38ec9d7f_srcj6yrk/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:17:26391)
+    at ez (/tmp/phylox/evogit_web_gpt-4o_0/.phylox_evaluate/fe838351479892b51301314fda26e2bc38ec9d7f_srcj6yrk/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:17:26887)
+Export encountered an error on /page: /, exiting the build.
+ ⨯ Next.js build worker exited with code: 1 and signal: null
