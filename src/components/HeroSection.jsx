@@ -1,5 +1,6 @@
 import React from "react";
 import Image from "next/image";
+import HeroCTAButton from "./HeroCTAButton";
 
 export default function HeroSection() {
   return (
@@ -20,18 +21,20 @@ export default function HeroSection() {
           evolutionary algorithms in modern AI workflows.
         </p>
         <div className="flex justify-center gap-4">
-          <a
+          <HeroCTAButton
             href="https://evox.readthedocs.io/en/latest/"
-            className="bg-white text-blue-600 px-6 py-3 rounded-lg hover:bg-gray-100 shadow-md"
-          >
-            Get Started
-          </a>
-          <a
+            bgColor="bg-white"
+            textColor="text-blue-600"
+            hoverColor="hover:bg-gray-100"
+            text="Get Started"
+          />
+          <HeroCTAButton
             href="https://github.com/EMI-Group/evox"
-            className="bg-gray-800 text-white px-6 py-3 rounded-lg hover:bg-gray-900 shadow-md"
-          >
-            GitHub Repo
-          </a>
+            bgColor="bg-gray-800"
+            textColor="text-white"
+            hoverColor="hover:bg-gray-900"
+            text="GitHub Repo"
+          />
         </div>
       </div>
     </section>
