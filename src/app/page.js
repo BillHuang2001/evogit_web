@@ -1,11 +1,10 @@
 import Image from "next/image";
-import NewsBanner from "../components/NewsBanner";
+import HeroSection from "../components/HeroSection";
 
 export default function Home() {
   return (
-    <div>
-      {/* News / Updates Section */}
-      <NewsBanner />
-    </div>
+    <main>
+      <HeroSection />
+    </main>
   );
 }
