@@ -7,10 +7,10 @@ export default function FeatureCard({ title, description, icon }) {
         </div>
       )}
       <div>
-        <h3 className="text-xl font-bold text-gray-800 dark:text-gray-200 group-hover:text-gray-900 dark:group-hover:text-gray-100 transition-colors">
+        <h3 className="text-xl font-bold text-gray-800 group-hover:text-gray-900 transition-colors dark:text-gray-200 dark:group-hover:text-gray-100">
           {title}
         </h3>
-        <p className="mt-2 text-gray-600 dark:text-gray-400 group-hover:text-gray-800 dark:group-hover:text-gray-300 transition-colors">
+        <p className="mt-2 text-gray-600 group-hover:text-gray-800 transition-colors dark:text-gray-400 dark:group-hover:text-gray-300">
           {description}
         </p>
       </div>
