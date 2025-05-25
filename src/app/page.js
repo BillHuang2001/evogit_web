@@ -3,6 +3,7 @@ import HeroSection from "../components/HeroSection";
 import NewsBanner from "../components/NewsBanner";
 import NavigationBar from "../components/NavigationBar";
 import KeyFeatures from "../components/KeyFeatures";
+import CodeExampleSection from "../components/CodeExampleSection";
 
 export default function Home() {
   return (
@@ -18,6 +19,9 @@ export default function Home() {
 
       {/* Key Features Section */}
       <KeyFeatures />
+
+      {/* Code Example Section */}
+      <CodeExampleSection />
     </div>
   );
 }
