@@ -19,9 +19,9 @@ export default function NewsBanner() {
 
   return (
     <div className="bg-gradient-to-r from-blue-500 to-indigo-600 text-white text-center py-2">
-      <div className="flex overflow-x-auto whitespace-nowrap scroll-smooth">
+      <div className="flex overflow-x-auto whitespace-nowrap scroll-smooth px-4">
         {news.map((item, index) => (
-          <span key={index} className="mx-4">
+          <span key={index} className="mx-4 flex-shrink-0">
             <strong>{item.title}</strong> - {item.description}{" "}
             <a
               href={item.link}
