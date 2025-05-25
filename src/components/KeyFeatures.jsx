@@ -37,7 +37,7 @@ export default function KeyFeatures() {
           Discover the powerful capabilities of EvoX to accelerate your workflows.
         </p>
         <div className="mt-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-8">
-          {features.map((feature, index) => (
+          {features.slice(0, 4).map((feature, index) => (
             <FeatureCard key={index} title={feature.title} description={feature.description} />
           ))}
         </div>
