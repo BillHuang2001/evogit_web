@@ -1,20 +1,21 @@
+import React from "react";
 import Image from "next/image";
 
 export default function HeroSection() {
   return (
-    <section className="bg-gray-100 py-16">
-      <div className="container mx-auto text-center px-4">
+    <section className="bg-gray-100 dark:bg-gray-900 py-16 px-4 text-center">
+      <div className="container mx-auto">
         <Image
-          src="/contents/images/evox_logo_with_text_dark.png"
+          src="/contents/images/evox_logo_with_text_light.png"
           alt="EvoX Logo"
-          width={300}
-          height={100}
+          width={200}
+          height={200}
           className="mx-auto mb-6"
         />
-        <h1 className="text-4xl font-bold text-gray-800 mb-4">
+        <h1 className="text-4xl font-bold text-gray-900 dark:text-white mb-4">
           EvoX: Evolutionary Computation Reimagined
         </h1>
-        <p className="text-lg text-gray-600 mb-8">
+        <p className="text-lg text-gray-700 dark:text-gray-300 mb-6">
           A powerful, flexible distributed and GPU-accelerated framework for
           evolutionary algorithms in modern AI workflows.
         </p>
@@ -31,9 +32,6 @@ export default function HeroSection() {
           >
             GitHub Repo
           </a>
-        </div>
-        <div className="mt-8 text-gray-500">
-          <code>pip install evox</code>
         </div>
       </div>
     </section>

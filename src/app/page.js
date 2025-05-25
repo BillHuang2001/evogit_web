@@ -1,14 +1,15 @@
 import Image from "next/image";
 import HeroSection from "../components/HeroSection";
 import NewsBanner from "../components/NewsBanner";
-import NavigationBar from "../components/NavigationBar";
 
 export default function Home() {
   return (
-    <main>
+    <div>
+      {/* News / Updates Banner */}
       <NewsBanner />
-      <NavigationBar />
+
+      {/* Hero Section */}
       <HeroSection />
-    </main>
+    </div>
   );
 }
