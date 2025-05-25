@@ -7,32 +7,39 @@ export default function CommunitySection() {
           Connect with other developers, contribute to EvoX, and explore our sister projects.
         </p>
         <div className="flex flex-wrap justify-center gap-6">
-          <a
+          <CommunityLink
             href="https://github.com/EMI-Group/evox"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="px-6 py-3 bg-blue-600 text-white rounded-md shadow-md hover:bg-blue-700"
-          >
-            GitHub
-          </a>
-          <a
+            label="GitHub"
+            bgColor="bg-blue-600"
+            hoverColor="hover:bg-blue-700"
+          />
+          <CommunityLink
             href="https://discord.gg/Vbtgcpy7G4"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="px-6 py-3 bg-indigo-600 text-white rounded-md shadow-md hover:bg-indigo-700"
-          >
-            Discord
-          </a>
-          <a
+            label="Discord"
+            bgColor="bg-indigo-600"
+            hoverColor="hover:bg-indigo-700"
+          />
+          <CommunityLink
             href="https://evox.readthedocs.io/en/latest/"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="px-6 py-3 bg-green-600 text-white rounded-md shadow-md hover:bg-green-700"
-          >
-            Documentation
-          </a>
+            label="Documentation"
+            bgColor="bg-green-600"
+            hoverColor="hover:bg-green-700"
+          />
         </div>
       </div>
     </section>
+  );
+}
+
+function CommunityLink({ href, label, bgColor, hoverColor }) {
+  return (
+    <a
+      href={href}
+      target="_blank"
+      rel="noopener noreferrer"
+      className={`px-6 py-3 ${bgColor} text-white rounded-md shadow-md ${hoverColor}`}
+    >
+      {label}
+    </a>
   );
 }
