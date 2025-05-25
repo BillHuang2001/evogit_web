@@ -34,7 +34,7 @@ export default function KeyFeatures() {
           Key Features
         </h2>
         <div className="mt-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-8">
-          {features.slice(0, 4).map((feature, index) => (
+          {features.map((feature, index) => (
             <FeatureCard key={index} title={feature.title} description={feature.description} />
           ))}
         </div>
