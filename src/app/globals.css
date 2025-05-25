@@ -24,3 +24,81 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+/* Added utility classes for spacing and layout consistency */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+.banner {
+  background-color: #f9fafb;
+  color: #1f2937;
+  padding: 0.5rem;
+  text-align: center;
+  font-size: 0.875rem;
+  font-weight: 500;
+}
+
+.banner a {
+  color: #3b82f6;
+  text-decoration: underline;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: var(--background);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.navbar a {
+  color: var(--foreground);
+  font-weight: 600;
+  margin: 0 1rem;
+  text-decoration: none;
+}
+
+.navbar a:hover {
+  color: #3b82f6;
+}
+
+.hero {
+  text-align: center;
+  padding: 4rem 2rem;
+  background-color: var(--background);
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: var(--foreground);
+}
+
+.hero p {
+  font-size: 1.25rem;
+  color: #4b5563;
+  margin-top: 1rem;
+}
+
+.hero .cta {
+  margin-top: 2rem;
+}
+
+.hero .cta a {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #ffffff;
+  background-color: #3b82f6;
+  border-radius: 0.375rem;
+  text-decoration: none;
+}
+
+.hero .cta a:hover {
+  background-color: #2563eb;
+}
