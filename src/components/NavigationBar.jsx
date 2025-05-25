@@ -1,4 +1,5 @@
 import Image from "next/image";
+import NavLink from "./NavLink";
 
 export default function NavigationBar() {
   return (
@@ -18,15 +19,5 @@ export default function NavigationBar() {
         <NavLink href="https://discord.gg/Vbtgcpy7G4" text="Community" />
       </ul>
     </nav>
-  );
-}
-
-function NavLink({ href, text }) {
-  return (
-    <li>
-      <a href={href} className="text-gray-700 hover:text-blue-500">
-        {text}
-      </a>
-    </li>
   );
 }
