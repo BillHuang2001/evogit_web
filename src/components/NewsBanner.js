@@ -27,7 +27,7 @@ export default function NewsBanner() {
               href={item.link}
               target="_blank"
               rel="noopener noreferrer"
-              className="underline hover:text-yellow-200"
+              className="underline hover:text-yellow-300"
             >
               [Details]
             </a>
