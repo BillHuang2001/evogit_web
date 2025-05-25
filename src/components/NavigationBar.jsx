@@ -18,6 +18,14 @@ export default function NavigationBar() {
         <NavLink href="https://github.com/EMI-Group/evox" text="GitHub" />
         <NavLink href="https://discord.gg/Vbtgcpy7G4" text="Community" />
       </ul>
+      <div className="hidden md:flex items-center space-x-4">
+        <a
+          href="https://pypi.org/project/evox/"
+          className="px-4 py-2 bg-blue-500 text-white rounded-md hover:bg-blue-600 transition"
+        >
+          Install EvoX
+        </a>
+      </div>
     </nav>
   );
 }
