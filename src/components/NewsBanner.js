@@ -18,8 +18,8 @@ export default function NewsBanner() {
   ];
 
   return (
-    <div className="bg-blue-500 text-white text-center py-2">
-      <marquee behavior="scroll" direction="left" scrollamount="5">
+    <div className="bg-gradient-to-r from-blue-500 to-indigo-600 text-white text-center py-2">
+      <div className="flex overflow-x-auto whitespace-nowrap scroll-smooth">
         {news.map((item, index) => (
           <span key={index} className="mx-4">
             <strong>{item.title}</strong> - {item.description}{" "}
@@ -33,7 +33,7 @@ export default function NewsBanner() {
             </a>
           </span>
         ))}
-      </marquee>
+      </div>
     </div>
   );
 }
