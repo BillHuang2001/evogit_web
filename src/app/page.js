@@ -4,6 +4,7 @@ import NewsBanner from "../components/NewsBanner";
 import NavigationBar from "../components/NavigationBar";
 import KeyFeatures from "../components/KeyFeatures";
 import Footer from "../components/Footer";
+import CodeExample from "../components/CodeExample";
 
 export default function Home() {
   return (
@@ -19,6 +20,9 @@ export default function Home() {
 
       {/* Key Features Section */}
       <KeyFeatures />
+
+      {/* Code Example Section */}
+      <CodeExample />
 
       {/* Footer Section */}
       <Footer />
