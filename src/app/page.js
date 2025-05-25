@@ -4,7 +4,7 @@ import NewsBanner from "../components/NewsBanner";
 import NavigationBar from "../components/NavigationBar";
 import KeyFeatures from "../components/KeyFeatures";
 import Footer from "../components/Footer";
-import CodeExample from "../components/CodeExample";
+import CodeExampleSection from "../components/CodeExampleSection";
 
 export default function Home() {
   return (
@@ -22,7 +22,7 @@ export default function Home() {
       <KeyFeatures />
 
       {/* Code Example Section */}
-      <CodeExample />
+      <CodeExampleSection />
 
       {/* Footer Section */}
       <Footer />
