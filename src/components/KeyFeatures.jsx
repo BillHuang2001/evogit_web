@@ -33,8 +33,8 @@ export default function KeyFeatures() {
         <h2 className="text-3xl font-extrabold text-gray-900 text-center">
           Key Features
         </h2>
-        <div className="mt-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-          {features.map((feature, index) => (
+        <div className="mt-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-8">
+          {features.slice(0, 4).map((feature, index) => (
             <FeatureCard key={index} title={feature.title} description={feature.description} />
           ))}
         </div>
