@@ -18,7 +18,7 @@ export default function NewsBanner() {
   ];
 
   return (
-    <div className="bg-blue-500 text-white text-center py-2">
+    <div className="bg-gradient-to-r from-blue-400 via-purple-500 to-indigo-600 text-white text-center py-2">
       <marquee behavior="scroll" direction="left" scrollamount="5">
         {news.map((item, index) => (
           <span key={index} className="mx-4">
@@ -27,7 +27,7 @@ export default function NewsBanner() {
               href={item.link}
               target="_blank"
               rel="noopener noreferrer"
-              className="underline hover:text-gray-200"
+              className="underline hover:text-yellow-300"
             >
               [Details]
             </a>
