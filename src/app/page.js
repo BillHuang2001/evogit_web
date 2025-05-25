@@ -5,10 +5,11 @@ import NavigationBar from "../components/NavigationBar";
 import KeyFeatures from "../components/KeyFeatures";
 import Footer from "../components/Footer";
 import CodeExampleSection from "../components/CodeExampleSection";
+import CommunitySection from "../components/CommunitySection";
 
 export default function Home() {
   return (
-    <div>
+    <div className="bg-white dark:bg-gray-900 text-gray-900 dark:text-gray-100">
       {/* News / Updates Banner */}
       <NewsBanner />
 
@@ -23,6 +24,9 @@ export default function Home() {
 
       {/* Code Example Section */}
       <CodeExampleSection />
+
+      {/* Community / Ecosystem Section */}
+      <CommunitySection />
 
       {/* Footer Section */}
       <Footer />
