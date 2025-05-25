@@ -7,7 +7,7 @@ export default function NewsBanner() {
         🚀 Released <strong>EvoX 1.2.1</strong> - Featuring the new Mujoco Playground and an official tutorial!{" "}
         <a
           href="https://evox.group/index.php?m=home&c=View&a=index&aid=157"
-          className="underline hover:text-yellow-300"
+          className="underline hover:text-yellow-300 transition duration-200 ease-in-out"
           target="_blank"
           rel="noopener noreferrer"
         >
