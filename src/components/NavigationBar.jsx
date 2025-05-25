@@ -12,27 +12,21 @@ export default function NavigationBar() {
         />
       </div>
       <ul className="flex space-x-4">
-        <li>
-          <a href="/" className="text-gray-700 hover:text-blue-500">
-            Home
-          </a>
-        </li>
-        <li>
-          <a href="https://evox.readthedocs.io/en/latest/" className="text-gray-700 hover:text-blue-500">
-            Docs
-          </a>
-        </li>
-        <li>
-          <a href="https://github.com/EMI-Group/evox" className="text-gray-700 hover:text-blue-500">
-            GitHub
-          </a>
-        </li>
-        <li>
-          <a href="https://discord.gg/Vbtgcpy7G4" className="text-gray-700 hover:text-blue-500">
-            Community
-          </a>
-        </li>
+        <NavLink href="/" text="Home" />
+        <NavLink href="https://evox.readthedocs.io/en/latest/" text="Docs" />
+        <NavLink href="https://github.com/EMI-Group/evox" text="GitHub" />
+        <NavLink href="https://discord.gg/Vbtgcpy7G4" text="Community" />
       </ul>
     </nav>
+  );
+}
+
+function NavLink({ href, text }) {
+  return (
+    <li>
+      <a href={href} className="text-gray-700 hover:text-blue-500">
+        {text}
+      </a>
+    </li>
   );
 }
