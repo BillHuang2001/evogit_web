@@ -1,4 +1,4 @@
-export default function NavLink({ href, text }) {
+export default function NavLink({ href, text, icon: Icon }) {
   return (
     <li className="inline-block mx-2">
       <a
