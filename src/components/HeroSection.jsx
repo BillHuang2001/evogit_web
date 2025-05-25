@@ -4,14 +4,21 @@ import HeroCTAButton from "./HeroCTAButton";
 
 export default function HeroSection() {
   return (
-    <section className="bg-gradient-to-r from-blue-500 to-purple-500 py-16 px-4 text-center">
+    <section className="bg-gradient-to-r from-blue-500 to-purple-500 py-16 px-4 text-center dark:from-gray-800 dark:to-gray-900">
       <div className="container mx-auto">
         <Image
           src="/contents/images/evox_logo_with_text_light.png"
           alt="EvoX Logo"
           width={200}
           height={200}
-          className="mx-auto mb-6"
+          className="mx-auto mb-6 dark:hidden"
+        />
+        <Image
+          src="/contents/images/evox_logo_with_text_dark.png"
+          alt="EvoX Logo Dark Mode"
+          width={200}
+          height={200}
+          className="mx-auto mb-6 hidden dark:block"
         />
         <h1 className="text-4xl font-bold text-white mb-4">
           EvoX: Evolutionary Computation Reimagined
