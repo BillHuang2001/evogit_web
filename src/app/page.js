@@ -2,6 +2,7 @@ import Image from "next/image";
 import HeroSection from "../components/HeroSection";
 import NewsBanner from "../components/NewsBanner";
 import NavigationBar from "../components/NavigationBar";
+import KeyFeatures from "../components/KeyFeatures";
 
 export default function Home() {
   return (
@@ -14,6 +15,9 @@ export default function Home() {
 
       {/* Hero Section */}
       <HeroSection />
+
+      {/* Key Features Section */}
+      <KeyFeatures />
     </div>
   );
 }
