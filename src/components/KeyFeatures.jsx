@@ -35,16 +35,19 @@ export default function KeyFeatures() {
         </h2>
         <div className="mt-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
           {features.map((feature, index) => (
-            <div
-              key={index}
-              className="bg-white shadow-md rounded-lg p-6 hover:shadow-lg transition-shadow"
-            >
-              <h3 className="text-xl font-bold text-gray-800">{feature.title}</h3>
-              <p className="mt-2 text-gray-600">{feature.description}</p>
-            </div>
+            <FeatureCard key={index} title={feature.title} description={feature.description} />
           ))}
         </div>
       </div>
     </section>
+  );
+}
+
+function FeatureCard({ title, description }) {
+  return (
+    <div className="bg-white shadow-md rounded-lg p-6 hover:shadow-lg transition-shadow">
+      <h3 className="text-xl font-bold text-gray-800">{title}</h3>
+      <p className="mt-2 text-gray-600">{description}</p>
+    </div>
   );
 }
