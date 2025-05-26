@@ -28,16 +28,16 @@ export default function KeyFeatures() {
   ];
 
   return (
-    <section className="bg-gray-100 py-12">
+    <section className="bg-gray-100 dark:bg-gray-900 py-12">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <h2 className="text-3xl font-extrabold text-gray-900 text-center">
+        <h2 className="text-3xl font-extrabold text-gray-900 dark:text-white text-center">
           Key Features
         </h2>
-        <p className="mt-4 text-lg text-gray-600 text-center">
+        <p className="mt-4 text-lg text-gray-600 dark:text-gray-300 text-center">
           Discover the powerful capabilities of EvoX to accelerate your workflows.
         </p>
         <div className="mt-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-8">
-          {features.slice(0, 4).map((feature, index) => (
+          {features.map((feature, index) => (
             <FeatureCard key={index} title={feature.title} description={feature.description} />
           ))}
         </div>
