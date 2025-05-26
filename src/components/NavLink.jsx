@@ -8,7 +8,7 @@ export default function NavLink({ href, text, icon: Icon }) {
         rel={href.startsWith("http") ? "noopener noreferrer" : undefined}
       >
         {Icon && <Icon className="h-5 w-5 text-gray-500 dark:text-gray-400" aria-hidden="true" />}
-        {text}
+        <span className="text-sm font-medium">{text}</span>
       </a>
     </li>
   );
