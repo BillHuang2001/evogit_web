@@ -10,7 +10,7 @@ export default function Footer() {
                 href="https://evox.readthedocs.io/en/latest/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="hover:text-white"
+                className="hover:text-white transition-colors duration-200"
               >
                 Documentation
               </a>
@@ -18,7 +18,7 @@ export default function Footer() {
             <li>
               <a
                 href="/install"
-                className="hover:text-white"
+                className="hover:text-white transition-colors duration-200"
               >
                 Install
               </a>
@@ -33,7 +33,7 @@ export default function Footer() {
                 href="https://github.com/EMI-Group/evox"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="hover:text-white"
+                className="hover:text-white transition-colors duration-200"
               >
                 GitHub Repo
               </a>
@@ -41,7 +41,7 @@ export default function Footer() {
             <li>
               <a
                 href="/contribute"
-                className="hover:text-white"
+                className="hover:text-white transition-colors duration-200"
               >
                 Contribute
               </a>
@@ -54,7 +54,7 @@ export default function Footer() {
             <li>
               <a
                 href="/license"
-                className="hover:text-white"
+                className="hover:text-white transition-colors duration-200"
               >
                 License
               </a>
@@ -62,7 +62,7 @@ export default function Footer() {
             <li>
               <a
                 href="/acknowledgments"
-                className="hover:text-white"
+                className="hover:text-white transition-colors duration-200"
               >
                 Acknowledgments
               </a>
