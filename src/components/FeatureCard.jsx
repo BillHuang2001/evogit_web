@@ -1,6 +1,6 @@
 export default function FeatureCard({ title, description, icon }) {
   return (
-    <div className="bg-white dark:bg-gray-800 shadow-md rounded-lg p-6 hover:shadow-lg transition-shadow flex items-start space-x-4">
+    <div className="bg-white dark:bg-gray-800 shadow-md rounded-lg p-6 hover:shadow-lg transition-shadow flex items-start space-x-4 group">
       {icon && (
         <div className="text-blue-500 dark:text-blue-400 w-10 h-10 flex items-center justify-center bg-blue-100 dark:bg-blue-900 rounded-full">
           {icon}
