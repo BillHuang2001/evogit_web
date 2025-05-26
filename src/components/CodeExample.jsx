@@ -1,5 +1,6 @@
 import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
-import { solarizedlight } from "react-syntax-highlighter/dist/cjs/styles/prism";
+import { solarizedlight, solarizeddark } from "react-syntax-highlighter/dist/cjs/styles/prism";
+import { useState } from "react";
 
 const CodeExample = () => {
   const exampleCode = `import torch
@@ -19,17 +20,42 @@ for i in range(100):
 
 monitor.plot() # or monitor.plot().show() if you are using headless mode`;
 
+  const [darkMode, setDarkMode] = useState(false);
+
+  const exampleOutput = `
+Optimization completed successfully.
+Best fitness: -0.0003
+Visualization generated: monitor.plot()`;
+
   return (
-    <section className="py-12 bg-gray-50">
+    <section className={`py-12 ${darkMode ? "bg-gray-800 text-white" : "bg-gray-50 text-black"}`}>
       <div className="container mx-auto px-4">
         <h2 className="text-3xl font-bold text-center mb-6">Code Example</h2>
-        <p className="text-center text-gray-600 mb-8">
+        <p className="text-center mb-8">
           See how simple it is to use EvoX for optimization tasks.
         </p>
-        <div className="bg-white shadow-lg rounded-lg overflow-hidden">
-          <SyntaxHighlighter language="python" style={solarizedlight}>
-            {exampleCode}
-          </SyntaxHighlighter>
+        <div className="flex flex-col md:flex-row gap-6 items-start">
+          <div className="w-full md:w-1/2 bg-white dark:bg-gray-900 shadow-lg rounded-lg overflow-hidden">
+            <SyntaxHighlighter language="python" style={darkMode ? solarizeddark : solarizedlight}>
+              {exampleCode}
+            </SyntaxHighlighter>
+          </div>
+          <div className="w-full md:w-1/2 bg-white dark:bg-gray-900 shadow-lg rounded-lg overflow-hidden p-4">
+            <h3 className="text-xl font-semibold mb-4">Output</h3>
+            <SyntaxHighlighter language="plaintext" style={darkMode ? solarizeddark : solarizedlight}>
+              {exampleOutput}
+            </SyntaxHighlighter>
+          </div>
+        </div>
+        <div className="text-center mt-8">
+          <button
+            onClick={() => setDarkMode(!darkMode)}
+            className={`px-4 py-2 rounded-lg font-semibold ${
+              darkMode ? "bg-gray-100 text-gray-800" : "bg-gray-800 text-gray-100"
+            }`}
+          >
+            Toggle Dark Mode
+          </button>
         </div>
       </div>
     </section>
