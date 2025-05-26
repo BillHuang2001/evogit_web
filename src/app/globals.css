@@ -230,23 +230,39 @@ body {
 .hero .cta a:hover {
   background-color: #2563eb;
 }
-
 /* Added styling for headings and links */
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Inter', sans-serif;
   margin-bottom: 0.5rem;
+  @apply font-bold text-gray-800 dark:text-gray-200;
 }
 
 a {
   color: var(--foreground);
   text-decoration: none;
   transition: color 0.3s ease;
+  @apply text-blue-500 dark:text-blue-400 hover:underline;
 }
 
-a:hover {
-  color: #4f46e5; /* Tailwind Indigo-600 */
+button {
+  @apply bg-blue-500 text-white font-medium py-2 px-4 rounded hover:bg-blue-600;
 }
 
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.6; /* Improved readability */
+  margin: 0; /* Remove default margin */
+  padding: 0; /* Remove default padding */
+}
+
+.container {
+  @apply mx-auto px-4;
+}
+
+.section {
+  @apply py-8 px-4 lg:py-12 lg:px-8;
 }
 
 .navbar a:hover {
@@ -290,8 +306,6 @@ a:hover {
   background-color: #2563eb;
 }
 
-/* Added styling for headings and links */
-h1, h2, h3, h4, h5, h6 {
   font-family: 'Inter', sans-serif;
   margin-bottom: 0.5rem;
 }
