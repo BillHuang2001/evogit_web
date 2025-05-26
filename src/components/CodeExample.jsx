@@ -37,22 +37,32 @@ Iteration 100: Fitness = 0.01`;
         <p className="text-center text-gray-600 dark:text-gray-400 mb-8">
           See how simple it is to use EvoX for optimization tasks.
         </p>
-        <div className="flex flex-col md:flex-row gap-4 items-start">
-          <div className="w-full md:w-1/2 bg-white dark:bg-gray-700 shadow-lg rounded-lg overflow-hidden">
-            <SyntaxHighlighter
-              language="python"
-              style={darkMode ? solarizeddark : solarizedlight}
-            >
-              {exampleCode}
-            </SyntaxHighlighter>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <div className="bg-white dark:bg-gray-700 shadow-lg rounded-lg overflow-hidden">
+            <div className="p-4">
+              <h3 className="text-lg font-semibold text-gray-800 dark:text-gray-200 mb-2">
+                Code Snippet
+              </h3>
+              <SyntaxHighlighter
+                language="python"
+                style={darkMode ? solarizeddark : solarizedlight}
+              >
+                {exampleCode}
+              </SyntaxHighlighter>
+            </div>
           </div>
-          <div className="w-full md:w-1/2 bg-white dark:bg-gray-700 shadow-lg rounded-lg overflow-hidden">
-            <SyntaxHighlighter
-              language="plaintext"
-              style={darkMode ? solarizeddark : solarizedlight}
-            >
-              {exampleOutput}
-            </SyntaxHighlighter>
+          <div className="bg-white dark:bg-gray-700 shadow-lg rounded-lg overflow-hidden">
+            <div className="p-4">
+              <h3 className="text-lg font-semibold text-gray-800 dark:text-gray-200 mb-2">
+                Output
+              </h3>
+              <SyntaxHighlighter
+                language="plaintext"
+                style={darkMode ? solarizeddark : solarizedlight}
+              >
+                {exampleOutput}
+              </SyntaxHighlighter>
+            </div>
           </div>
         </div>
         <div className="text-center mt-8">

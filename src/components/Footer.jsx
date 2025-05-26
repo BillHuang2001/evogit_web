@@ -71,7 +71,17 @@ export default function Footer() {
         </div>
       </div>
       <div className="text-center text-sm mt-8">
-        &copy; {new Date().getFullYear()} EvoX. All rights reserved.
+        <p>&copy; {new Date().getFullYear()} EvoX. All rights reserved.</p>
+        <p>
+          <a
+            href="https://discord.gg/Vbtgcpy7G4"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hover:text-white"
+          >
+            Join our Discord Community
+          </a>
+        </p>
       </div>
     </footer>
   );
