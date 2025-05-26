@@ -13,6 +13,12 @@ export default function FeatureCard({ title, description, icon }) {
         <p className="mt-2 text-gray-600 group-hover:text-gray-800 transition-colors dark:text-gray-400 dark:group-hover:text-gray-300">
           {description}
         </p>
+        <a
+          href="#"
+          className="mt-4 inline-block text-blue-500 dark:text-blue-400 hover:text-blue-700 dark:hover:text-blue-300 transition-colors text-sm font-medium"
+        >
+          Learn More →
+        </a>
       </div>
     </div>
   );
