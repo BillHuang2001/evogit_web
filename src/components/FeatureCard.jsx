@@ -1,4 +1,4 @@
-export default function FeatureCard({ title, description, icon }) {
+export default function FeatureCard({ title, description, icon, link }) {
   return (
     <div className="bg-white dark:bg-gray-800 shadow-md rounded-lg p-6 hover:shadow-lg transition-shadow flex items-start space-x-4 group">
       {icon && (
@@ -13,6 +13,14 @@ export default function FeatureCard({ title, description, icon }) {
         <p className="mt-3 text-gray-600 group-hover:text-gray-800 transition-colors dark:text-gray-400 dark:group-hover:text-gray-300 leading-relaxed">
           {description}
         </p>
+        {link && (
+          <a
+            href={link}
+            className="mt-4 inline-block text-blue-500 dark:text-blue-400 hover:text-blue-700 dark:hover:text-blue-300 transition-colors text-sm font-medium"
+          >
+            Learn More →
+          </a>
+        )}
       </div>
     </div>
   );
