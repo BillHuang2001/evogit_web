@@ -6,6 +6,7 @@ export default function HeroSection() {
   return (
     <section className="bg-gradient-to-r from-blue-500 to-purple-500 py-16 px-4 text-center dark:from-gray-800 dark:to-gray-900">
       <div className="container mx-auto">
+        {/* Logo for Light and Dark Mode */}
         <Image
           src="/contents/images/evox_logo_with_text_light.png"
           alt="EvoX Logo"
@@ -20,14 +21,20 @@ export default function HeroSection() {
           height={200}
           className="mx-auto mb-6 hidden dark:block"
         />
-        <h1 className="text-4xl font-bold text-white mb-4">
+
+        {/* Headline */}
+        <h1 className="text-4xl md:text-5xl font-bold text-white mb-4">
           EvoX: Evolutionary Computation Reimagined
         </h1>
-        <p className="text-lg text-gray-200 mb-6">
+
+        {/* Subtext */}
+        <p className="text-lg md:text-xl text-gray-200 mb-6 max-w-3xl mx-auto">
           A powerful, flexible distributed and GPU-accelerated framework for
           evolutionary algorithms in modern AI workflows.
         </p>
-        <div className="flex justify-center gap-4">
+
+        {/* Call-to-Action Buttons */}
+        <div className="flex flex-wrap justify-center gap-4">
           <HeroCTAButton
             href="https://evox.readthedocs.io/en/latest/"
             bgColor="bg-white"
@@ -43,13 +50,28 @@ export default function HeroSection() {
             text="GitHub Repo"
           />
         </div>
+
+        {/* Additional Info */}
         <div className="mt-8">
           <p className="text-sm text-gray-300 dark:text-gray-400">
-            Current Version: <span className="font-semibold text-white">1.2.1</span>
+            Current Version:{" "}
+            <span className="font-semibold text-white">1.2.1</span>
           </p>
           <p className="text-sm text-gray-300 dark:text-gray-400">
-            Released: <span className="font-semibold text-white">May 13, 2025</span>
+            Released:{" "}
+            <span className="font-semibold text-white">May 13, 2025</span>
           </p>
+        </div>
+
+        {/* Decorative Background */}
+        <div className="absolute inset-0 -z-10 overflow-hidden">
+          <Image
+            src="/contents/images/demo/rastrigin_function.svg"
+            alt="Decorative Background"
+            layout="fill"
+            objectFit="cover"
+            className="opacity-10 dark:opacity-20"
+          />
         </div>
       </div>
     </section>
