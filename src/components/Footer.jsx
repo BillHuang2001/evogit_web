@@ -70,9 +70,9 @@ export default function Footer() {
           </ul>
         </div>
       </div>
-      <div className="text-center text-sm mt-8 text-gray-400">
+      <div className="container mx-auto flex flex-col md:flex-row justify-between items-center mt-8 text-gray-400 text-sm">
         <p>&copy; {new Date().getFullYear()} EvoX. All rights reserved.</p>
-        <p>
+        <div className="flex space-x-4 mt-4 md:mt-0">
           <a
             href="https://discord.gg/Vbtgcpy7G4"
             target="_blank"
@@ -81,7 +81,23 @@ export default function Footer() {
           >
             Join our Discord Community
           </a>
-        </p>
+          <a
+            href="https://github.com/EMI-Group/evox"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hover:text-gray-50"
+          >
+            GitHub
+          </a>
+          <a
+            href="https://evox.readthedocs.io/en/latest/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hover:text-gray-50"
+          >
+            Documentation
+          </a>
+        </div>
       </div>
     </footer>
   );
