@@ -30,16 +30,17 @@ export default function NewsBanner() {
           <InformationCircleIcon className="h-5 w-5 text-blue-500 dark:text-blue-300" />
           <span className="font-medium">Latest News:</span>
         </div>
-        <div className="flex space-x-6 overflow-x-auto">
+        <div className="flex space-x-6 overflow-x-auto scrollbar-thin scrollbar-thumb-blue-300 dark:scrollbar-thumb-blue-700 scrollbar-track-transparent">
           {newsItems.map((item, index) => (
             <a
               key={index}
               href={item.link}
               target="_blank"
               rel="noopener noreferrer"
-              className="hover:underline whitespace-nowrap"
+              className="hover:underline whitespace-nowrap flex flex-col items-start"
             >
-              <span className="font-semibold">{item.date}:</span> {item.title}
+              <span className="font-semibold">{item.date}:</span>
+              <span className="text-sm">{item.title}</span>
             </a>
           ))}
         </div>
