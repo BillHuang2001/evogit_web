@@ -23,7 +23,12 @@ export default function Home() {
       <KeyFeatures />
 
       {/* Code Example Section */}
-      <CodeExampleSection />
+      <div className="px-6 md:px-12 lg:px-24 py-12">
+        <h2 className="text-3xl font-bold mb-6 text-gray-800 dark:text-gray-100">
+          Code Examples
+        </h2>
+        <CodeExampleSection />
+      </div>
 
       {/* Community / Ecosystem Section */}
       <CommunitySection />
