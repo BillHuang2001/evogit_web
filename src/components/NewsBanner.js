@@ -19,8 +19,8 @@ export default function NewsBanner() {
 
   return (
     <div className="bg-gradient-to-r from-blue-500 to-indigo-600 text-white text-center py-2 dark:bg-gradient-to-r dark:from-gray-800 dark:to-gray-900">
-      <div className="flex overflow-hidden whitespace-nowrap scroll-smooth px-4">
-        <div className="w-full animate-scroll">
+      <div className="relative overflow-hidden">
+        <div className="flex animate-scroll whitespace-nowrap scroll-smooth px-4">
           {news.map((item, index) => (
             <span
               key={index}
