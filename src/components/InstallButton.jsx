@@ -13,6 +13,12 @@ export default function InstallButton() {
       >
         View on GitHub
       </a>
+      <a
+        href="https://evox.readthedocs.io/en/latest/"
+        className="px-4 py-2 bg-green-500 text-white rounded-md hover:bg-green-600 transition dark:bg-green-400 dark:hover:bg-green-500 shadow-md shadow-green-400/50 dark:shadow-green-300/30"
+      >
+        Documentation
+      </a>
     </div>
   );
 }
