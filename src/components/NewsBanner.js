@@ -19,12 +19,12 @@ export default function NewsBanner() {
 
   return (
     <div className="bg-gradient-to-r from-blue-500 to-indigo-600 text-white text-center py-2 dark:bg-gradient-to-r dark:from-gray-800 dark:to-gray-900">
-      <div className="flex overflow-hidden whitespace-nowrap scroll-smooth px-4">
-        <div className="w-full animate-scroll">
+      <div className="flex overflow-hidden whitespace-nowrap scroll-smooth px-4 relative">
+        <div className="flex animate-scroll space-x-8">
           {news.map((item, index) => (
-            <span
+            <div
               key={index}
-              className="mx-4 flex-shrink-0 hover:scale-105 transition-transform duration-300 inline-block"
+              className="inline-block mx-4 flex-shrink-0 hover:scale-105 transition-transform duration-300"
             >
               <strong>{item.title}</strong> - {item.description}{" "}
               <a
@@ -35,7 +35,7 @@ export default function NewsBanner() {
               >
                 [Details]
               </a>
-            </span>
+            </div>
           ))}
         </div>
       </div>
