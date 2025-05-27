@@ -37,9 +37,10 @@ export default function NewsBanner() {
               href={item.link}
               target="_blank"
               rel="noopener noreferrer"
-              className="hover:underline whitespace-nowrap"
+              className="hover:underline whitespace-nowrap flex items-center space-x-2"
             >
-              <span className="font-semibold">{item.date}:</span> {item.title}
+              <span className="font-semibold">{item.date}:</span>
+              <span>{item.title}</span>
             </a>
           ))}
         </div>
