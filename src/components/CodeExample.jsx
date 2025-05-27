@@ -37,7 +37,7 @@ Iteration 100: Fitness = 0.01`;
         <p className="text-center text-gray-600 dark:text-gray-400 mb-8">
           See how simple it is to use EvoX for optimization tasks.
         </p>
-        <div className="flex flex-col md:flex-row gap-6">
+        <div className="flex flex-col lg:flex-row gap-6">
           <div className="flex-1 bg-white dark:bg-gray-700 shadow-lg rounded-lg overflow-hidden">
             <div className="p-4">
               <h3 className="text-lg font-semibold text-gray-800 dark:text-gray-200 mb-2">
