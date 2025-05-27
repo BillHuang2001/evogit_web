@@ -54,7 +54,7 @@ export default function Footer() {
             <li>
               <a
                 href="/license"
-                className="hover:text-gray-100 transition-colors duration-200"
+                className="hover:text-gray-50 transition-colors duration-200"
               >
                 License
               </a>
@@ -72,16 +72,32 @@ export default function Footer() {
       </div>
       <div className="text-center text-sm mt-8 text-gray-400">
         <p>&copy; {new Date().getFullYear()} EvoX. All rights reserved.</p>
-        <p>
+        <div className="flex space-x-4 mt-4 md:mt-0">
           <a
             href="https://discord.gg/Vbtgcpy7G4"
             target="_blank"
             rel="noopener noreferrer"
-            className="hover:text-gray-100"
+            className="hover:text-gray-50"
           >
             Join our Discord Community
           </a>
-        </p>
+          <a
+            href="https://github.com/EMI-Group/evox"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hover:text-gray-50"
+          >
+            GitHub
+          </a>
+          <a
+            href="https://evox.readthedocs.io/en/latest/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hover:text-gray-50"
+          >
+            Documentation
+          </a>
+        </div>
       </div>
     </footer>
   );
