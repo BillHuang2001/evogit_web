@@ -77,9 +77,21 @@ export default function Footer() {
             href="https://discord.gg/Vbtgcpy7G4"
             target="_blank"
             rel="noopener noreferrer"
-            className="hover:text-gray-100"
+            className="hover:text-gray-100 transition-colors duration-200"
           >
             Join our Discord Community
+          </a>
+        </p>
+      </div>
+      <div className="text-center text-sm mt-4 text-gray-400">
+        <p>
+          <a
+            href="https://github.com/EMI-Group/evox"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hover:text-gray-100 transition-colors duration-200"
+          >
+            Star us on GitHub ⭐
           </a>
         </p>
       </div>
