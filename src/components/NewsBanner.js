@@ -24,7 +24,7 @@ export default function NewsBanner() {
           {news.map((item, index) => (
             <span
               key={index}
-              className="mx-4 flex-shrink-0 hover:scale-105 transition-transform duration-300 inline-block"
+              className="mx-4 flex-shrink-0 hover:scale-105 transition-transform duration-300 inline-block text-sm md:text-base"
             >
               <strong>{item.title}</strong> - {item.description}{" "}
               <a
