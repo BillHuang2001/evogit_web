@@ -1,6 +1,15 @@
 import React from "react";
 
-export default function HeroCTAButton({ href, bgColor, textColor, hoverColor, text, icon, target, additionalClasses }) {
+export default function HeroCTAButton({
+  href,
+  bgColor,
+  textColor,
+  hoverColor,
+  text,
+  icon,
+  target,
+  additionalClasses,
+}) {
   return (
     <a
       href={href}
