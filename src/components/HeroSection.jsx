@@ -43,6 +43,14 @@ export default function HeroSection() {
             text="GitHub Repo"
           />
         </div>
+        <div className="mt-8">
+          <p className="text-sm text-gray-300 dark:text-gray-400">
+            Current Version: <span className="font-semibold text-white">1.2.1</span>
+          </p>
+          <p className="text-sm text-gray-300 dark:text-gray-400">
+            Released: <span className="font-semibold text-white">May 13, 2025</span>
+          </p>
+        </div>
       </div>
     </section>
   );
