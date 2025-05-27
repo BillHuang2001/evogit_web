@@ -2,8 +2,10 @@ export default function CommunitySection() {
   return (
     <section className="py-16 bg-gray-100 dark:bg-gray-800">
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
-        <h2 className="text-3xl font-bold text-center mb-8">Join Our Community</h2>
-        <p className="text-center text-lg mb-8">
+        <h2 className="text-3xl font-bold text-center mb-8 text-gray-900 dark:text-gray-100">
+          Join Our Community
+        </h2>
+        <p className="text-center text-lg mb-8 text-gray-700 dark:text-gray-300">
           Connect with other developers, contribute to EvoX, and explore our sister projects.
         </p>
         <div className="flex flex-wrap justify-center gap-6">
@@ -25,6 +27,18 @@ export default function CommunitySection() {
             bgColor="bg-green-600"
             hoverColor="hover:bg-green-700"
           />
+          <CommunityLink
+            href="https://arxiv.org/abs/2301.12457"
+            label="Paper"
+            bgColor="bg-yellow-600"
+            hoverColor="hover:bg-yellow-700"
+          />
+          <CommunityLink
+            href="https://github.com/EMI-Group/evoxbench"
+            label="EvoXBench"
+            bgColor="bg-purple-600"
+            hoverColor="hover:bg-purple-700"
+          />
         </div>
       </div>
     </section>
@@ -37,7 +51,7 @@ function CommunityLink({ href, label, bgColor, hoverColor }) {
       href={href}
       target="_blank"
       rel="noopener noreferrer"
-      className={`px-6 py-3 ${bgColor} text-white rounded-md shadow-md ${hoverColor}`}
+      className={`px-6 py-3 ${bgColor} text-white rounded-md shadow-md ${hoverColor} transition-colors duration-200 text-lg font-medium`}
     >
       {label}
     </a>
