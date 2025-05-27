@@ -9,7 +9,7 @@ import CommunitySection from "../components/CommunitySection";
 
 export default function Home() {
   return (
-    <div className="bg-white dark:bg-gray-900 text-gray-900 dark:text-gray-100">
+    <div className="bg-white dark:bg-gray-900 text-gray-900 dark:text-gray-100 transition-colors duration-300">
       {/* News / Updates Banner */}
       <NewsBanner />
 
@@ -23,7 +23,9 @@ export default function Home() {
       <KeyFeatures />
 
       {/* Code Example Section */}
-      <CodeExampleSection />
+      <div className="px-6 lg:px-16">
+        <CodeExampleSection />
+      </div>
 
       {/* Community / Ecosystem Section */}
       <CommunitySection />
