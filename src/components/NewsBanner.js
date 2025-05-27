@@ -20,7 +20,7 @@ export default function NewsBanner() {
   return (
     <div className="bg-gradient-to-r from-blue-500 to-indigo-600 text-white text-center py-2 dark:bg-gradient-to-r dark:from-gray-800 dark:to-gray-900">
       <div className="flex overflow-hidden whitespace-nowrap scroll-smooth px-4">
-        <marquee className="w-full">
+        <div className="w-full animate-scroll">
           {news.map((item, index) => (
             <span
               key={index}
@@ -37,7 +37,7 @@ export default function NewsBanner() {
               </a>
             </span>
           ))}
-        </marquee>
+        </div>
       </div>
     </div>
   );
