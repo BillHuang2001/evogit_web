@@ -26,12 +26,13 @@ export default function NewsBanner() {
               key={index}
               className="mx-4 flex-shrink-0 hover:scale-105 transition-transform duration-300 inline-block"
             >
-              <strong>{item.title}</strong> - {item.description}{" "}
+              <strong className="text-lg">{item.title}</strong> -{" "}
+              <span className="text-base">{item.description}</span>{" "}
               <a
                 href={item.link}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="underline hover:text-yellow-300 dark:hover:text-yellow-500"
+                className="underline text-yellow-200 hover:text-yellow-300 dark:text-yellow-400 dark:hover:text-yellow-500"
               >
                 [Details]
               </a>

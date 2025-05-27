@@ -70,7 +70,7 @@ export default function Footer() {
           </ul>
         </div>
       </div>
-      <div className="text-center text-sm mt-8">
+      <div className="container mx-auto text-center text-sm mt-8">
         <p>&copy; {new Date().getFullYear()} EvoX. All rights reserved.</p>
         <p>
           <a
