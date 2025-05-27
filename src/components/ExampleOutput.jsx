@@ -2,8 +2,8 @@ import React from "react";
 
 const ExampleOutput = ({ src, alt, caption }) => {
   return (
-    <div className="flex flex-col items-center space-y-4">
-      <div className="relative max-w-md w-full aspect-square">
+    <div className="flex flex-col lg:flex-row items-center lg:space-x-8 space-y-4 lg:space-y-0">
+      <div className="relative max-w-md w-full lg:max-w-lg aspect-square lg:aspect-auto">
         <img
           src={src}
           alt={alt}
@@ -11,7 +11,7 @@ const ExampleOutput = ({ src, alt, caption }) => {
         />
       </div>
       {caption && (
-        <div className="text-center text-sm text-gray-600 dark:text-gray-400">
+        <div className="text-center lg:text-left text-sm text-gray-600 dark:text-gray-400">
           {caption}
         </div>
       )}
