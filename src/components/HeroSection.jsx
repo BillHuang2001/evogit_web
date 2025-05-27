@@ -28,7 +28,7 @@ export default function HeroSection() {
         </h1>
 
         {/* Subtext */}
-        <p className="text-lg md:text-xl text-gray-200 mb-6 max-w-3xl mx-auto">
+        <p className="text-lg md:text-xl text-gray-300 mb-6 max-w-3xl mx-auto">
           A powerful, flexible distributed and GPU-accelerated framework for
           evolutionary algorithms in modern AI workflows.
         </p>
@@ -53,11 +53,11 @@ export default function HeroSection() {
 
         {/* Additional Info */}
         <div className="mt-8">
-          <p className="text-sm text-gray-300 dark:text-gray-400">
+          <p className="text-sm text-gray-400 dark:text-gray-500">
             Current Version:{" "}
             <span className="font-semibold text-white">1.2.1</span>
           </p>
-          <p className="text-sm text-gray-300 dark:text-gray-400">
+          <p className="text-sm text-gray-400 dark:text-gray-500">
             Released:{" "}
             <span className="font-semibold text-white">May 13, 2025</span>
           </p>
@@ -71,13 +71,13 @@ export default function HeroSection() {
           alt="Decorative Background"
           layout="fill"
           objectFit="cover"
-          className="opacity-10 dark:opacity-20"
+          className="opacity-20 dark:opacity-30"
         />
       </div>
 
       {/* Animated Decorative Element */}
-      <div className="absolute top-1/4 left-1/4 w-48 h-48 bg-gradient-to-br from-yellow-400 to-red-500 rounded-full blur-3xl opacity-50 dark:opacity-30 animate-pulse"></div>
-      <div className="absolute bottom-1/4 right-1/4 w-64 h-64 bg-gradient-to-br from-green-400 to-blue-500 rounded-full blur-3xl opacity-50 dark:opacity-30 animate-pulse"></div>
+      <div className="absolute top-1/4 left-1/4 w-48 h-48 bg-gradient-to-br from-yellow-400 to-red-500 rounded-full blur-3xl opacity-60 dark:opacity-40 animate-pulse"></div>
+      <div className="absolute bottom-1/4 right-1/4 w-64 h-64 bg-gradient-to-br from-green-400 to-blue-500 rounded-full blur-3xl opacity-60 dark:opacity-40 animate-pulse"></div>
     </section>
   );
 }
