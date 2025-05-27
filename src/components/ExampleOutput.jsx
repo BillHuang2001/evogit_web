@@ -2,7 +2,7 @@ import React from "react";
 
 const ExampleOutput = ({ src, alt, caption }) => {
   return (
-    <div className="flex justify-center items-center">
+    <div className="flex flex-col justify-center items-center space-y-4">
       <div className="relative max-w-xs w-full aspect-square">
         <img
           src={src}
@@ -10,6 +10,11 @@ const ExampleOutput = ({ src, alt, caption }) => {
           className="rounded-lg shadow-lg w-full h-full object-contain"
         />
       </div>
+      {caption && (
+        <div className="text-center text-sm text-gray-600 dark:text-gray-400">
+          {caption}
+        </div>
+      )}
     </div>
   );
 };
