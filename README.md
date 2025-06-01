@@ -41,3 +41,22 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/bui
 
 > [!NOTE]
 > The GitHub UI may not display all branches by default. Click the `view all branches` link to see the complete list.
+
+## Example Web Page
+
+The following screenshots are taken directly from commit b1f8b6.
+![EvoGit Example Web Page Light Mode](/screenshot/web_final_light.png)
+![EvoGit Example Web Page Dark Mode](/screenshot/web_final_dark.png)
+
+To verify that the web page is working correctly, you can run the following command:
+
+```bash
+git clone https://github.com/BillHuang2001/evogit_web
+cd evogit_web
+git checkout b1f8b6
+npm install
+npx next build
+npx next start
+```
+
+Then, open [http://localhost:3000](http://localhost:3000) in your browser to see the web page.
